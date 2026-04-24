@@ -1,0 +1,62 @@
+{
+  "0": [
+    { "q": "Quanto é 5 + 5?", "options": ["8", "9", "10", "11"], "answer": 2 },
+    { "q": "Qual é a cor do sol?", "options": ["Azul", "Amarelo", "Verde", "Branco"], "answer": 1 },
+    { "q": "Quantos dias tem uma semana?", "options": ["5", "6", "7", "8"], "answer": 2 },
+    { "q": "Qual animal faz 'miau'?", "options": ["Cachorro", "Vaca", "Gato", "Pato"], "answer": 2 },
+    { "q": "Qual é o plural de pão?", "options": ["Pães", "Pãos", "Pãezes", "Pãoes"], "answer": 0 },
+    { "q": "Qual desses é uma fruta?", "options": ["Cenoura", "Batata", "Maçã", "Alface"], "answer": 2 },
+    { "q": "Quantas horas tem um dia?", "options": ["12", "18", "24", "30"], "answer": 2 },
+    { "q": "Qual objeto mostra as horas?", "options": ["Bússola", "Relógio", "Mapa", "Régua"], "answer": 1 },
+    { "q": "Qual é o oposto de quente?", "options": ["Seco", "Molhado", "Frio", "Claro"], "answer": 2 },
+    { "q": "Qual número vem depois do 9?", "options": ["8", "9", "10", "11"], "answer": 2 },
+
+    { "q": "Qual é a primeira letra do alfabeto?", "options": ["A", "B", "C", "D"], "answer": 0 },
+    { "q": "Qual animal late?", "options": ["Gato", "Cachorro", "Vaca", "Cavalo"], "answer": 1 },
+    { "q": "Quantos dedos tem uma mão?", "options": ["3", "4", "5", "6"], "answer": 2 },
+    { "q": "Qual desses é um meio de transporte?", "options": ["Mesa", "Carro", "Cama", "Porta"], "answer": 1 },
+    { "q": "Qual é o contrário de noite?", "options": ["Escuro", "Tarde", "Dia", "Sono"], "answer": 2 },
+    { "q": "Qual número vem antes do 10?", "options": ["8", "9", "10", "11"], "answer": 1 },
+    { "q": "Qual desses é uma bebida?", "options": ["Arroz", "Água", "Pão", "Carne"], "answer": 1 },
+    { "q": "Quantos meses tem um ano?", "options": ["10", "11", "12", "13"], "answer": 2 },
+    { "q": "Qual objeto usamos para escrever?", "options": ["Borracha", "Tesoura", "Lápis", "Copo"], "answer": 2 },
+    { "q": "Qual desses é um animal?", "options": ["Pedra", "Nuvem", "Peixe", "Areia"], "answer": 2 }
+  ],
+
+  "1": [
+    { "q": "Quem descobriu o Brasil?", "options": ["Dom Pedro I", "Pedro Álvares Cabral", "Tiradentes", "Getúlio Vargas"], "answer": 1 },
+    { "q": "Qual planeta é conhecido como planeta vermelho?", "options": ["Terra", "Vênus", "Marte", "Júpiter"], "answer": 2 },
+    { "q": "Qual é o maior oceano do mundo?", "options": ["Atlântico", "Índico", "Ártico", "Pacífico"], "answer": 3 },
+    { "q": "Quantos continentes existem?", "options": ["5", "6", "7", "8"], "answer": 2 },
+    { "q": "Quem pintou a Mona Lisa?", "options": ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"], "answer": 2 },
+    { "q": "Qual é a capital do Brasil?", "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"], "answer": 2 },
+    { "q": "Qual gás os humanos respiram?", "options": ["Oxigênio", "Gás carbônico", "Hidrogênio", "Nitrogênio"], "answer": 0 },
+    { "q": "Quantos lados tem um triângulo?", "options": ["2", "3", "4", "5"], "answer": 1 },
+    { "q": "Qual instrumento mede temperatura?", "options": ["Barômetro", "Termômetro", "Altímetro", "Velocímetro"], "answer": 1 },
+    { "q": "Qual é o menor estado do Brasil?", "options": ["Sergipe", "Alagoas", "Espírito Santo", "Rio Grande do Norte"], "answer": 0 }
+  ],
+
+  "2": [
+    { "q": "Qual é o maior planeta do sistema solar?", "options": ["Terra", "Marte", "Júpiter", "Saturno"], "answer": 2 },
+    { "q": "Em que ano o homem pisou na Lua?", "options": ["1965", "1969", "1972", "1980"], "answer": 1 },
+    { "q": "Quem escreveu Dom Casmurro?", "options": ["Machado de Assis", "José de Alencar", "Clarice Lispector", "Carlos Drummond"], "answer": 0 },
+    { "q": "Qual país tem a maior população do mundo?", "options": ["Índia", "Estados Unidos", "China", "Rússia"], "answer": 2 },
+    { "q": "Qual é a capital da Austrália?", "options": ["Sydney", "Melbourne", "Canberra", "Perth"], "answer": 2 },
+    { "q": "Quantos elementos tem a tabela periódica?", "options": ["92", "108", "118", "130"], "answer": 2 },
+    { "q": "Qual cientista criou a teoria da relatividade?", "options": ["Newton", "Einstein", "Galileu", "Tesla"], "answer": 1 },
+    { "q": "Qual é o rio mais extenso do mundo?", "options": ["Nilo", "Amazonas", "Yangtzé", "Mississippi"], "answer": 1 },
+    { "q": "Qual metal é líquido à temperatura ambiente?", "options": ["Ferro", "Mercúrio", "Prata", "Alumínio"], "answer": 1 },
+    { "q": "Qual país sediou a Copa de 2014?", "options": ["Alemanha", "África do Sul", "Brasil", "Rússia"], "answer": 2 }
+  ],
+
+  "3": [
+    { "q": "Qual civilização construiu Machu Picchu?", "options": ["Asteca", "Maia", "Inca", "Olmeca"], "answer": 2 },
+    { "q": "Qual elemento químico tem símbolo Fe?", "options": ["Flúor", "Ferro", "Fósforo", "Fermium"], "answer": 1 },
+    { "q": "Em que ano terminou a Segunda Guerra Mundial?", "options": ["1943", "1944", "1945", "1946"], "answer": 2 },
+    { "q": "Quem escreveu 'A Divina Comédia'?", "options": ["Homero", "Virgílio", "Dante", "Shakespeare"], "answer": 2 },
+    { "q": "Qual país foi o berço da democracia?", "options": ["Roma", "Egito", "Grécia", "França"], "answer": 2 },
+    { "q": "Qual é a capital da Nova Zelândia?", "options": ["Auckland", "Wellington", "Hamilton", "Queenstown"], "answer": 1 },
+    { "q": "Quem formulou as leis do movimento?", "options": ["Galileu", "Einstein", "Newton", "Kepler"], "answer": 2 },
+    { "q": "Qual tratado encerrou a Primeira Guerra Mundial?", "options": ["Tordesilhas", "Versalhes", "Utrecht", "Paris"], "answer": 1 }
+  ]
+}

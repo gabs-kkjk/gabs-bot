@@ -1,0 +1,70 @@
+{
+  "120363294090587795@g.us": {
+    "warnLimit": 3,
+    "warns": {
+      "138921421860982@lid": [
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776783353101,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776783381170,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776783407884,
+          "valid": true
+        }
+      ],
+      "55856301342766@lid": [
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776783638085,
+          "valid": true
+        }
+      ],
+      "163075898519659@lid": [
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776900338878,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776900875543,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776900938251,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776901339102,
+          "valid": true
+        },
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776901372282,
+          "valid": true
+        },
+        {
+          "reason": "excesso de perturbação",
+          "timestamp": 1776901413456,
+          "valid": false
+        }
+      ],
+      "4325082415358@lid": [
+        {
+          "reason": "Advertência genérica",
+          "timestamp": 1776905443458,
+          "valid": true
+        }
+      ]
+    }
+  }
+}

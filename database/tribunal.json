@@ -1,0 +1,25 @@
+{
+  "themes": [
+    "Roubo misterioso no grupo",
+    "Mensagem suspeita apagada",
+    "Golpe do Pix fantasma",
+    "Áudio vazado no grupo",
+    "Print falso espalhado",
+    "Briga que saiu do controle",
+    "Denúncia anônima no chat"
+  ],
+
+  "innocentTexts": [
+    "O usuário é inocente. Ele não cometeu nenhum crime e nem estava ativo no momento do ocorrido.",
+    "Após investigação, ficou claro que o usuário não teve envolvimento algum.",
+    "Tudo não passou de um mal-entendido. O acusado é inocente.",
+    "Nenhuma prova concreta foi encontrada. O usuário é inocente."
+  ],
+
+  "guiltyTexts": [
+    "O usuário foi considerado culpado. As evidências apontam envolvimento direto no caso.",
+    "Após os votos, ficou claro que o usuário participou do ocorrido.",
+    "O tribunal decidiu: culpado. As atitudes foram suspeitas demais.",
+    "As provas e votos confirmaram a culpa do usuário."
+  ]
+}
