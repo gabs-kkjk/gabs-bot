@@ -1,0 +1,12 @@
+[
+  {
+    "id": "vip",
+    "nome": "VIP",
+    "preco": 1000
+  },
+  {
+    "id": "caixa",
+    "nome": "Caixa Misteriosa",
+    "preco": 300
+  }
+]
