@@ -1,17 +1,66 @@
 import fs from "fs"
 import path from "path"
 
-const pathUsers = path.resolve("./database/users.json")
+const legacyUsersPath = path.resolve("./database/users.json")
+const usersDir = path.resolve("./database/users")
+
+function ensureUsersDir() {
+  if (!fs.existsSync(usersDir)) {
+    fs.mkdirSync(usersDir, { recursive: true })
+  }
+}
+
+function ensureLegacyFile() {
+  if (!fs.existsSync(legacyUsersPath)) {
+    fs.writeFileSync(legacyUsersPath, JSON.stringify({}))
+  }
+}
+
+function sanitizeId(id) {
+  return id.replace(/[^a-zA-Z0-9@._-]/g, "_")
+}
+
+function getUserFilePath(sender) {
+  return path.join(usersDir, `${sanitizeId(sender)}.json`)
+}
 
 export function getUsers() {
-  if (!fs.existsSync(pathUsers)) {
-    fs.writeFileSync(pathUsers, JSON.stringify({}))
+  ensureUsersDir()
+  ensureLegacyFile()
+
+  const users = {}
+
+  const userFiles = fs.readdirSync(usersDir).filter((file) => file.endsWith(".json"))
+  for (const file of userFiles) {
+    const full = path.join(usersDir, file)
+    try {
+      const data = JSON.parse(fs.readFileSync(full))
+      if (data?.id) users[data.id] = data
+    } catch {
+      // ignora arquivo inválido
+    }
   }
-  return JSON.parse(fs.readFileSync(pathUsers))
+
+  if (Object.keys(users).length === 0) {
+    const legacy = JSON.parse(fs.readFileSync(legacyUsersPath))
+    for (const [id, data] of Object.entries(legacy)) {
+      users[id] = data
+    }
+  }
+
+  return users
 }
 
 export function saveUsers(users) {
-  fs.writeFileSync(pathUsers, JSON.stringify(users, null, 2))
+  ensureUsersDir()
+
+  for (const [id, data] of Object.entries(users)) {
+    const payload = {
+      id,
+      ...data
+    }
+    fs.writeFileSync(getUserFilePath(id), JSON.stringify(payload, null, 2))
+  }
 }
 
 export function getUser(users, sender) {
