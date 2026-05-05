@@ -1,0 +1,18 @@
+{
+  "id": "undefined",
+  "saldo": 500,
+  "bank": 0,
+  "xp": 0,
+  "level": 1,
+  "inventario": [],
+  "lastDaily": 1777833382528,
+  "lastWork": 0,
+  "gold": 1913,
+  "lastMinerar": 1777917075870,
+  "economyStats": {
+    "mineradas": 1,
+    "roubosSucesso": 0,
+    "roubosFalha": 0,
+    "casinoLucroTotal": 100
+  }
+}

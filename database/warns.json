@@ -66,5 +66,17 @@
         }
       ]
     }
+  },
+  "120363401221757654@g.us": {
+    "warnLimit": 3,
+    "warns": {
+      "175059108946063@lid": [
+        {
+          "reason": "passo do limite 1 vez",
+          "timestamp": 1777945209231,
+          "valid": true
+        }
+      ]
+    }
   }
 }

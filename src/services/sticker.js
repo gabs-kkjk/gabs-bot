@@ -58,7 +58,7 @@ export async function processStaticSticker(inputPath, metadata) {
   return new Promise((resolve, reject) => {
     const tempOutputPath = path.resolve(TEMP_DIR, getRandomName("webp"));
 
-    const cmd = `ffmpeg -i "${inputPath}" -vf "scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:(ow-iw)/2:(oh-ih)/2" -f webp -quality 90 "${tempOutputPath}"`;
+    const cmd = `ffmpeg -i "${inputPath}" -vf "scale=512:512:flags=lanczos" -f webp -quality 90 "${tempOutputPath}"`;
 
     exec(cmd, async (error, _, stderr) => {
       try {
@@ -164,7 +164,7 @@ export async function createSticker(paramsHandler) {
       }
 
       await new Promise((resolve, reject) => {
-        const cmd = `ffmpeg -i "${inputPath}" -vf "scale=512:512:force_original_aspect_ratio=decrease" -f webp -quality 90 "${outputTempPath}"`;
+        const cmd = `ffmpeg -i "${inputPath}" -vf "scale=512:512:flags=lanczos" -f webp -quality 90 "${outputTempPath}"`;
 
         exec(cmd, (error, _, stderr) => {
           if (error) {
@@ -212,7 +212,7 @@ export async function createSticker(paramsHandler) {
       }
 
       await new Promise((resolve, reject) => {
-        const cmd = `ffmpeg -y -i "${inputPath}" -vf "scale=350:350,fps=15" -c:v libwebp -loop 0 -quality 8 -compression_level 6 -method 6 -preset picture -an -f webp "${outputTempPath}"`;
+        const cmd = `ffmpeg -y -i "${inputPath}" -vf "scale=512:512:flags=lanczos,fps=15" -c:v libwebp -loop 0 -quality 8 -compression_level 6 -method 6 -preset picture -an -f webp "${outputTempPath}"`;
 
         exec(cmd, (error, _, stderr) => {
           if (error) {

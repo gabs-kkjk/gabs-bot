@@ -11,7 +11,7 @@ export default {
   handle: async ({ fullArgs, sendText, socket, remoteJid, sendReact }) => {
     const { participants } = await socket.groupMetadata(remoteJid);
     const mentions = participants.map(({ id }) => id);
-    await sendReact("📢");
-    await sendText(`📢 Marcando todos!\n\n${fullArgs}`, mentions);
+    await sendReact("🖕🏻");
+    await sendText(`removeu você\n\n${fullArgs}`, mentions);
   },
 };
