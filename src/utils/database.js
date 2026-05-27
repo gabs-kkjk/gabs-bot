@@ -18,6 +18,7 @@ const ANTI_LINK_GROUPS_FILE = "anti-link-groups";
 const AUTO_RESPONDER_FILE = "auto-responder";
 const AUTO_RESPONDER_GROUPS_FILE = "auto-responder-groups";
 const AUTO_STICKER_GROUPS_FILE = "auto-sticker-groups";
+const CHAT_INTERACTION_GROUPS_FILE = "chat-interaction-groups";
 const CONFIG_FILE = "config";
 const EXIT_GROUPS_FILE = "exit-groups";
 const GROUP_RESTRICTIONS_FILE = "group-restrictions";
@@ -282,6 +283,42 @@ export function isActiveAutoStickerGroup(groupId) {
   const autoStickerGroups = readJSON(filename);
 
   return autoStickerGroups.includes(groupId);
+}
+
+export function activateChatInteractionGroup(groupId) {
+  const filename = CHAT_INTERACTION_GROUPS_FILE;
+
+  const interactionGroups = readJSON(filename, []);
+
+  if (!interactionGroups.includes(groupId)) {
+    interactionGroups.push(groupId);
+  }
+
+  writeJSON(filename, interactionGroups, []);
+}
+
+export function deactivateChatInteractionGroup(groupId) {
+  const filename = CHAT_INTERACTION_GROUPS_FILE;
+
+  const interactionGroups = readJSON(filename, []);
+
+  const index = interactionGroups.indexOf(groupId);
+
+  if (index === -1) {
+    return;
+  }
+
+  interactionGroups.splice(index, 1);
+
+  writeJSON(filename, interactionGroups, []);
+}
+
+export function isActiveChatInteractionGroup(groupId) {
+  const filename = CHAT_INTERACTION_GROUPS_FILE;
+
+  const interactionGroups = readJSON(filename, []);
+
+  return interactionGroups.includes(groupId);
 }
 
 export function muteMember(groupId, memberId) {
